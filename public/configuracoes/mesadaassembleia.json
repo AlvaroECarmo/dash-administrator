@@ -1,0 +1,15 @@
+{
+    "mesadaassembleia": {
+        "id": 1,
+        "url": "/",
+        "headerTitle": "Entidade da Mesa do Presidio",
+        "Search": "pesquisar Deputado22",
+        "title": "Titulo",
+        "statuSelector": "Cargo / Função Parlamentar",
+        "iconSelector": "Seleciona o icon22",
+        "datetime": "Data22",
+        "note": "Domentação / Conteúdo da Entidade",
+        "class": "current",
+        "key": ""
+    }
+}

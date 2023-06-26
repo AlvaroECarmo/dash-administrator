@@ -1,0 +1,19 @@
+{"gerirpublicacoes":
+
+    {
+        "id": 1,
+        "url": "/",
+        "headerTitle": "Artigos e Publicações",
+        "Search": "pesquisar Deputado",
+        "title": "Titulo22",
+        "statuSelector":"Seleciona o estado22",
+        "iconSelector":"Seleciona o icon22",
+        "datetime":"Data22",
+        "note":"Nota22",
+        "class": "current",
+        "key": ""
+    }
+
+
+
+}

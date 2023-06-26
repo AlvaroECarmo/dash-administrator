@@ -1,0 +1,17 @@
+{"centralinformacoes":
+
+   {
+        "id": 1,
+        "url": "/central-informacao",
+        "headerTitle": "central de informações",
+        "title": "Titulo22",
+        "statuSelector":"Seleciona o estado22",
+        "iconSelector":"Seleciona o icon22",
+        "datetime":"Data22",
+        "class": "current",
+        "key": ""
+    }
+
+
+
+}

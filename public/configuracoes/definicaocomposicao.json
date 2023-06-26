@@ -1,0 +1,16 @@
+{
+    "definicaocomposicao": {
+        "id": 1,
+        "url": "/",
+        "headerTitle": "Definição e Composição",
+        "title": "Apresentação",
+        "title2": "Titulo",
+        "context": "Breve Conteúdo",
+        "statuSelector": "Seleciona o estado22",
+        "iconSelector": "Seleciona o icon22",
+        "datetime": "Data22",
+        "note": "Historico do Parlamento",
+        "class": "current",
+        "key": ""
+    }
+}

@@ -1,0 +1,17 @@
+{"gerirmenuprincipal":
+
+    {
+        "id": 1,
+        "url": "/",
+        "headerTitle": "Novo Menu",
+        "title": "Titulo",
+        "acessLink":"Classificação",
+        "link":"Link / Url",
+        "menuType":"Tipo de Menu",
+        "class": "current",
+        "key": ""
+    }
+
+
+
+}

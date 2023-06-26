@@ -1,0 +1,95 @@
+   var KTTablesWidget4 = function () {
+            var e, t, a;
+            const r = () => {
+                    const e = document.querySelector('[data-kt-table-widget-4="filter_status"]');
+                    $(e).on("select2:select", (function (e) {
+                        const a = $(this).val();
+                        "Show All" === a ? t.search("").draw() : t.search(a).draw()
+                    }))
+                }, o = [{
+                    image: "76",
+                    name: "Go Pro 8",
+                    description: "Latest  version of Go Pro.",
+                    cost: "500.00",
+                    qty: "1",
+                    total: "500.00",
+                    stock: "12"
+                }],
+                i = () => {
+                    const e = document.querySelectorAll('[data-kt-table-widget-4="expand_row"]'),
+                        t = [3, 1, 3, 1, 2, 1];
+                    e.forEach(((e, a) => {
+                        e.addEventListener("click", (r => {
+                            r.stopImmediatePropagation(), r.preventDefault();
+                            const i = e.closest("tr"), l = ["isOpen", "border-bottom-0"], n = [];
+                            for (var d = 0; d < t[a]; d++) n.push(o[d]);
+                            if (i.classList.contains("isOpen")) {
+                                for (; i.nextSibling && "subtable_template" === i.nextSibling.getAttribute("data-kt-table-widget-4");) i.nextSibling.parentNode.removeChild(i.nextSibling);
+                                i.classList.remove(...l), e.classList.remove("active")
+                            } else s(n, i), i.classList.add(...l), e.classList.add("active")
+                        }))
+                    }))
+                }, s = (t, r) => {
+                    t.forEach(((o, i) => {
+                        const s = a.cloneNode(!0), l = s.querySelector('[data-kt-table-widget-4="template_image"]'),
+                            n = s.querySelector('[data-kt-table-widget-4="template_name"]'),
+                            d = s.querySelector('[data-kt-table-widget-4="template_description"]'),
+                            c = s.querySelector('[data-kt-table-widget-4="template_cost"]'),
+                            u = s.querySelector('[data-kt-table-widget-4="template_qty"]'),
+                            p = s.querySelector('[data-kt-table-widget-4="template_total"]'),
+                            m = s.querySelector('[data-kt-table-widget-4="template_stock"]'),
+                            g = l.getAttribute("data-kt-src-path");
+                        l.setAttribute("src", g + o.image + ".gif"), n.innerText = o.name, d.innerText = o.description, c.innerText = o.cost, u.innerText = o.qty, p.innerText = o.total, o.stock > 10 ? m.innerHTML = '<div class="badge badge-light-success">In Stock</div>' : m.innerHTML = '<div class="badge badge-light-warning">Low Stock</div>', 1 === t.length || t.length;
+                        e.querySelector("tbody").insertBefore(s, r.nextSibling)
+                    }))
+                }, l = () => {
+                    document.querySelectorAll('[data-kt-table-widget-4="subtable_template"]').forEach((e => {
+                        e.parentNode.removeChild(e)
+                    }));
+                    e.querySelectorAll("tbody tr").forEach((e => {
+                        e.classList.remove("isOpen"), e.querySelector('[data-kt-table-widget-4="expand_row"]') && e.querySelector('[data-kt-table-widget-4="expand_row"]').classList.remove("active")
+                    }))
+                };
+            return {
+                init: function () {
+                    (e = document.querySelector("#kt_table_widget_4_table")) && ((() => {
+                        e.querySelectorAll("tbody tr").forEach((e => {
+                            const t = e.querySelectorAll("td"), a = moment(t[1].innerHTML, "DD MMM YYYY, LT").format();
+                            e.closest('[data-kt-table-widget-4="subtable_template"]') || (t[1].setAttribute("data-order", a), t[1].innerText = moment(a).fromNow())
+                        }));
+                        const r = document.querySelector('[data-kt-table-widget-4="subtable_template"]');
+                        (a = r.cloneNode(!0)).classList.remove("d-none"), r.parentNode.removeChild(r), (t = $(e).DataTable({
+                            info: !1,
+                            order: [],
+                            lengthChange: !1,
+                            pageLength: 6,
+                            ordering: !1,
+                            paging: !1,
+                            columnDefs: [{orderable: !1, targets: 0}, {orderable: !1, targets: 6}]
+                        })).on("draw", (function () {
+                            l(), i()
+                        }))
+                    })(), document.querySelector('[data-kt-table-widget-4="search"]').addEventListener("keyup", (function (e) {
+                        t.search(e.target.value).draw()
+                    })), r(), i())
+                }
+            }
+        }();
+
+        "undefined" != typeof module && (module.exports = KTChartsWidget9), KTUtil.onDOMContentLoaded((function () {
+            KTTablesWidget4.init();
+        }));
+
+
+        <span class="svg-icon svg-icon-3 m-0 toggle-off">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect opacity="0.5" x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"></rect>
+                <rect x="6" y="11" width="12" height="2" rx="1" fill="black"></rect>
+            </svg>
+        </span>
+
+        <span class="svg-icon svg-icon-3 m-0 toggle-on">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="6" y="11" width="12" height="2" rx="1" fill="black"></rect>
+            </svg>
+        </span>

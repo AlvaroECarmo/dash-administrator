@@ -1,0 +1,13 @@
+{
+    "gerirLinguas": {
+        "id": 1,
+        "url": "/",
+        "headerTitle": "Nova Lingua",
+        "language": "Lingua",
+        "datetime": "Data",
+        "note": "Observação",
+        "class": "current",
+        "key": "",
+        "header_main": "Cabeçalho Associado"
+    }
+}

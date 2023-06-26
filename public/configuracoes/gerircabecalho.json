@@ -1,0 +1,15 @@
+{"gerircabecalho":
+
+    {
+        "id": 1,
+        "url": "/",
+        "headerTitle": "Novo Menu",
+        "region": "Time Zona/ Região",
+        "statuSelector":"Seleciona o estado",
+        "iconSelector":"Seleciona o icon",
+        "datetime":"Data",
+        "class": "current",
+        "key": ""
+    }
+
+}

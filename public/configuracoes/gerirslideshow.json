@@ -1,0 +1,13 @@
+{
+    "gerirslideshow": {
+        "id": 1,
+        "url": "/",
+        "headerTitle": "Novo Item Slider",
+        "title": "Titulo . ",
+        "href": "Link / Url ",
+        "description": "Conteudo descritivo",
+        "datetime": "Data22",
+        "class": "current",
+        "key": ""
+    }
+}

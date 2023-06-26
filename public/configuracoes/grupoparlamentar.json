@@ -1,0 +1,17 @@
+{"grupoparlamentar":
+
+    {
+        "id": 1,
+        "url": "/",
+        "headerTitle": "Grupos Parlamentares",
+        "title": "Titulo22",
+        "statuSelector":"Seleciona o estado22",
+        "iconSelector":"Seleciona o icon22",
+        "datetime":"Data22",
+        "class": "current",
+        "key": ""
+    }
+
+
+
+}

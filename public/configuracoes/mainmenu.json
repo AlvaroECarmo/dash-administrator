@@ -1,0 +1,200 @@
+{
+    "mainmenu": [
+        {
+            "id": 1,
+            "url": "/",
+            "Title": "Dashboard",
+            "class": "current",
+            "key": "",
+            "elements": null
+        },
+        {
+            "id": 2,
+            "url": "#",
+            "Title": "Cabeçalho",
+            "class": "dropdown",
+            "elements": [
+                {
+                    "id": 1,
+                    "url": "/cabecalho",
+                    "SubTitle": "Gerir Cabeçalho",
+                    "key": ""
+                },
+                {
+                    "id": 2,
+                    "url": "/menu-principal",
+                    "SubTitle": "Gerir Menu Principal",
+                    "key": ""
+                },
+                {
+                    "id": 3,
+                    "url": "/linguas",
+                    "SubTitle": "Gerir Linguas",
+                    "key": ""
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "url": "#",
+            "Title": "Banner Central",
+            "class": "dropdown",
+            "elements": [
+                {
+                    "id": 1,
+                    "url": "/slider-show",
+                    "SubTitle": "Gerir as Slider",
+                    "key": ""
+                },
+                {
+                    "id": 2,
+                    "url": "/menu-legislativo",
+                    "SubTitle": "Gerir Menu Legislativo",
+                    "key": ""
+                },
+                {
+                    "id": 3,
+                    "url": "/definicao-composicao",
+                    "SubTitle": "Definição e Composição",
+                    "key": ""
+                },
+                {
+                    "id": 3,
+                    "url": "/noticias",
+                    "SubTitle": "Notícias",
+                    "key": ""
+                },
+                {
+                    "id": 4,
+                    "url": "/videos-portal",
+                    "SubTitle": "Videos do Portal",
+                    "key": ""
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "url": "#",
+            "Title": "ENT. Parlamentares",
+            "class": "dropdown",
+            "elements": [
+                {
+                    "id": 1,
+                    "url": "/mesa-presidio",
+                    "SubTitle": "Mesa do Presidio",
+                    "key": ""
+                },
+                {
+                    "id": 1,
+                    "url": "/deputados",
+                    "SubTitle": "Perfil do Deputado",
+                    "key": ""
+                },
+                {
+                    "id": 1,
+                    "url": "/outros-perfis",
+                    "SubTitle": "Outros Perfis",
+                    "key": ""
+                },
+                {
+                    "id": 1,
+                    "url": "/quadro-historico",
+                    "SubTitle": "Quadro Histórico",
+                    "key": ""
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "url": "#",
+            "Title": "Rodapé Site",
+            "class": "dropdown",
+            "elements": [
+                {
+                    "id": 1,
+                    "url": "/grupo-parlamentar",
+                    "SubTitle": "Grupos Parlamentares",
+                    "key": ""
+                },
+                {
+                    "id": 2,
+                    "url": "/central-informacao",
+                    "SubTitle": "Central de Informações",
+                    "key": ""
+                },
+                {
+                    "id": 3,
+                    "url": "/contacto-adminstrativo",
+                    "SubTitle": "Contactos Administrativos",
+                    "key": ""
+                },
+                {
+                    "id": 4,
+                    "url": "/logos",
+                    "SubTitle": "Gerir Insignia",
+                    "key": ""
+                },
+                {
+                    "id": 3,
+                    "url": "/notificacao",
+                    "SubTitle": "Notificações",
+                    "key": ""
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "url": "/perfil",
+            "Title": "Perfil do Utilizador",
+            "class": "",
+            "key": "",
+            "elements": null
+        },
+        {
+            "id": 7,
+            "url": "#",
+            "Title": "Blogs da Pagina",
+            "class": "dropdown",
+            "elements": [
+                {
+                    "id": 1,
+                    "url": "/blogInfomation",
+                    "SubTitle": "Informação",
+                    "key": ""
+                },
+                {
+                    "id": 2,
+                    "url": "/blogMultimedia",
+                    "SubTitle": "Multimedia",
+                    "key": ""
+                },
+                {
+                    "id": 2,
+                    "url": "/OutrasPaginas",
+                    "SubTitle": "Outras-paginas",
+                    "key": ""
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "url": "#",
+            "Title": "Configurações",
+            "class": "dropdown",
+            "elements": [
+                {
+                    "id": 1,
+                    "url": "/Grupos",
+                    "SubTitle": "Gerir Grupos",
+                    "key": ""
+                },
+                {
+                    "id": 2,
+                    "url": "/membrosGrupo",
+                    "SubTitle": "Grupos e Membros",
+                    "key": ""
+                }
+            ]
+        }
+    ]
+}

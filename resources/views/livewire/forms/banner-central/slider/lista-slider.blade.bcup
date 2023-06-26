@@ -1,0 +1,37 @@
+  <div id="kt_carousel_1_carousel" class="carousel carousel-custom slide" data-bs-ride="carousel"
+                 data-bs-interval="8000">
+
+                <!--begin::Carousel-->
+                <div class="carousel-inner pt-8">
+
+                @foreach($sliders as $slider)
+
+                    <!--end::Item-->
+                    @if($loop->iteration == 1)
+                        @livewire('forms.banner-central.slider.item-slider', ['activeVal'=>'active', 'title'=>$slider->h1, 'data' => $slider,'$slider'=> $slider])
+                    @endif
+                    <!--begin::Item-->
+                    @livewire('forms.banner-central.slider.item-slider', ['title'=>$slider->h1, 'data' => $slider, 'slider'=> $slider])
+                @endforeach
+                <!--end::Item-->
+
+                </div>
+                <!--end::Carousel-->
+
+                <!--begin::Heading-->
+                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                    <!--begin::Label-->
+                    <span class="fs-4 fw-bolder pe-2"></span>
+                    <!--end::Label-->
+                    <!--begin::Carousel Indicators-->
+                    <ol class="p-0 m-0 carousel-indicators carousel-indicators-dots">
+                        @foreach($sliders as $slider)
+                            <li data-bs-target="#kt_carousel_1_carousel" data-bs-slide-to="{{ $loop->iteration }}"
+                                class="ms-1"></li>
+                        @endforeach
+
+                    </ol>
+                    <!--end::Carousel Indicators-->
+                </div>
+                <!--end::Heading-->
+            </div>
