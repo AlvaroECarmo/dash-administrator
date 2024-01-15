@@ -35,7 +35,7 @@
                                @if($item->typeMultimedia ==  5  )
                                href="/assets/media/audioimage.webp"
                                @else
-                               href="{{ $item->urlSternal??$item->urlFile }}"
+                               href="{{$item->urlSternal??$item->urlFile }}"
                                 @endif >
 
                                 <!--begin::Image-->
@@ -124,6 +124,7 @@
                                     <!--end::Label-->
                                 </div>
                             </div>
+
 
                             <!--end::Body-->
                         </div>
